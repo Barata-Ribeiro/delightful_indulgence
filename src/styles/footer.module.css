@@ -1,0 +1,148 @@
+.footer {
+  width: 100%;
+  height: 24.0625rem;
+  flex-shrink: 0;
+  background: var(--keppel-950);
+}
+
+.wrapper {
+  display: flex;
+  max-width: 67rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+
+  & .logo {
+    width: 8.5rem;
+    height: 4rem;
+  }
+
+  & p {
+    color: var(--keppel-50);
+    font-size: 0.875rem;
+    max-width: 25ch;
+    font-family: Roboto;
+  }
+
+  & .socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .socialIcon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.secondColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5625rem;
+
+  & .contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    & .contactText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+
+      & h2 {
+        color: var(--keppel-50);
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      & p {
+        color: var(--keppel-50);
+        text-align: center;
+        line-height: normal;
+        max-width: 25ch;
+      }
+    }
+
+    & .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.5rem;
+
+      color: var(--keppel-50);
+      line-height: normal;
+
+      & .contactLinks {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+    }
+  }
+
+  & .copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+
+    color: var(--keppel-50);
+
+    & p:first-of-type {
+      font-size: 0.75rem;
+      line-height: normal;
+    }
+
+    & p:last-of-type {
+      font-size: 0.875rem;
+      line-height: normal;
+    }
+  }
+}
+
+.thirdColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+  color: var(--keppel-50);
+
+  & .siteMapTitle {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+  & .mapLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+    line-height: 100%;
+
+    & li {
+      padding: 0.25rem 0.5rem;
+    }
+
+    & li:hover {
+      color: var(--keppel-100);
+    }
+  }
+}
