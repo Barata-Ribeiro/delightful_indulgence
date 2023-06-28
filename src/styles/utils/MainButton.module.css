@@ -1,0 +1,31 @@
+.button {
+  display: flex;
+  padding: 1.125rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: var(--keppel-500);
+
+  color: var(--edward-50);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--keppel-600);
+  }
+
+  &:active {
+    background-color: var(--keppel-700);
+  }
+
+  &:disabled {
+    border-radius: 8px;
+    opacity: 0.5;
+    background-color: var(--keppel-200);
+    color: var(--keppel-700);
+  }
+}

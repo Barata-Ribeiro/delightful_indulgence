@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700&display=swap');
+
 :root {
   /* COLORS */
   --keppel-50: #eefbf5;
@@ -35,8 +37,23 @@
   --edward-800: #444846;
   --edward-900: #3b3f3e;
   --edward-950: #272a29;
+
+  --type-first: 'Roboto', sans-serif;
+  --type-second: 'Pacifico', cursive;
+
+  --shadow-2px: 0px 2px 5px -5px rgba(39, 42, 41, 0.2),
+    0px 6px 4px -4px rgba(39, 42, 41, 0.12),
+    0px 2px 4px -4px rgba(39, 42, 41, 0.14);
 }
 
 body {
   margin-top: 6.25rem;
+  font-family: var(--type-first);
+  color: var(--edward-950);
+  background-color: var(--edward-50);
+}
+
+.container {
+  max-width: 76rem;
+  margin: 0 auto;
 }

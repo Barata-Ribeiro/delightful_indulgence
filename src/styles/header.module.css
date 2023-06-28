@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  background-color: var(--keppel-50);
+  height: 6.25rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: var(--shadow-2px);
+}
+
+.nav {
+  display: flex;
+  padding: 1.125rem 4.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 8.5rem;
+  height: 4rem;
+  flex-shrink: 0;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLinks li a {
+  color: var(--edward-950);
+  padding: 0.25rem 0.5rem;
+  line-height: 100%;
+  position: relative;
+  transition: 0.2s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    border-radius: 1rem;
+    background-color: var(--meteor-600);
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
