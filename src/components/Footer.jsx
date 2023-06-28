@@ -10,18 +10,38 @@ import { ReactComponent as Phone } from '../assets/images/icons/phone_android.sv
 import styles from '../styles/footer.module.css';
 
 const socialMediaLinks = [
-  { name: 'Facebook', icon: <Facebook />, url: 'https://www.facebook.com/' },
-  { name: 'Instagram', icon: <Instagram />, url: 'https://www.instagram.com/' },
-  { name: 'Twitter', icon: <Twitter />, url: 'https://www.twitter.com/' },
+  {
+    id: 'facebook',
+    name: 'Facebook',
+    icon: <Facebook />,
+    url: 'https://www.facebook.com/',
+  },
+  {
+    id: 'instagram',
+    name: 'Instagram',
+    icon: <Instagram />,
+    url: 'https://www.instagram.com/',
+  },
+  {
+    id: 'twitter',
+    name: 'Twitter',
+    icon: <Twitter />,
+    url: 'https://www.twitter.com/',
+  },
 ];
 
 const siteLinks = [
-  { name: 'Home', url: '/', isHashLink: false },
-  { name: 'Menu', url: '/#menu', isHashLink: true },
-  { name: 'Team', url: '/#team', isHashLink: true },
-  { name: 'Story', url: '/story', isHashLink: false },
-  { name: 'Contact', url: '/contact', isHashLink: false },
-  { name: 'Privacy Policy', url: '/privacypolicy', isHashLink: false },
+  { id: 'home', name: 'Home', url: '/', isHashLink: false },
+  { id: 'menu', name: 'Menu', url: '/#menu', isHashLink: true },
+  { id: 'team', name: 'Team', url: '/#team', isHashLink: true },
+  { id: 'story', name: 'Story', url: '/story', isHashLink: false },
+  { id: 'contact', name: 'Contact', url: '/contact', isHashLink: false },
+  {
+    id: 'privacyPolicy',
+    name: 'Privacy Policy',
+    url: '/privacypolicy',
+    isHashLink: false,
+  },
 ];
 
 const Footer = () => {
@@ -43,8 +63,8 @@ const Footer = () => {
             here is real.
           </p>
           <ul className={styles.socialIcons}>
-            {socialMediaLinks.map((link, index) => (
-              <li key={index}>
+            {socialMediaLinks.map((link) => (
+              <li key={link.id}>
                 <a
                   className={styles.socialIcon}
                   href={link.url}
@@ -93,8 +113,8 @@ const Footer = () => {
         <div className={styles.thirdColumn}>
           <p className={styles.siteMapTitle}>Site Links</p>
           <ul className={styles.mapLinks}>
-            {siteLinks.map((link, index) => (
-              <li key={index}>
+            {siteLinks.map((link) => (
+              <li key={link.id}>
                 {link.isHashLink ? (
                   <HashLink smooth to={link.url}>
                     {link.name}

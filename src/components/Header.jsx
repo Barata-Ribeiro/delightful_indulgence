@@ -5,6 +5,14 @@ import styles from '../styles/header.module.css';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import MainButton from './utils/MainButton';
 
+const navLinks = [
+  { id: 'home', name: 'Home', url: '/', isHashLink: false },
+  { id: 'menu', name: 'Menu', url: '/#menu', isHashLink: true },
+  { id: 'team', name: 'Team', url: '/#team', isHashLink: true },
+  { id: 'story', name: 'Story', url: '/story', isHashLink: false },
+  { id: 'contact', name: 'Contact', url: '/contact', isHashLink: false },
+];
+
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -17,25 +25,17 @@ const Header = () => {
           <Logo />
         </Link>
         <ul className={styles.navLinks}>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <HashLink smooth to='/#menu'>
-              Menu
-            </HashLink>
-          </li>
-          <li>
-            <HashLink smooth to='/#team'>
-              Team
-            </HashLink>
-          </li>
-          <li>
-            <Link to='/story'>Story</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              {link.isHashLink ? (
+                <HashLink smooth to={link.url}>
+                  {link.name}
+                </HashLink>
+              ) : (
+                <Link to={link.url}>{link.name}</Link>
+              )}
+            </li>
+          ))}
         </ul>
         <Link to='/order'>
           <MainButton text='Order Ahead' />
