@@ -1,0 +1,42 @@
+:root {
+  /* COLORS */
+  --keppel-50: #eefbf5;
+  --keppel-100: #d6f5e5;
+  --keppel-200: #b0eacf;
+  --keppel-300: #7dd8b4;
+  --keppel-400: #3eb489;
+  --keppel-500: #24a57a;
+  --keppel-600: #178462;
+  --keppel-700: #126a51;
+  --keppel-800: #115441;
+  --keppel-900: #0f4537;
+  --keppel-950: #07271f;
+
+  --meteor-50: #fdfbe9;
+  --meteor-100: #fbf7c6;
+  --meteor-200: #f8ec90;
+  --meteor-300: #f4db50;
+  --meteor-400: #efc620;
+  --meteor-500: #dfae13;
+  --meteor-600: #c78c0e;
+  --meteor-700: #9a620e;
+  --meteor-800: #7f4d14;
+  --meteor-900: #6c3f17;
+  --meteor-950: #3f2009;
+
+  --edward-50: #f7f8f7;
+  --edward-100: #eef0f0;
+  --edward-200: #dadddc;
+  --edward-300: #b0b5b3;
+  --edward-400: #959b99;
+  --edward-500: #787f7c;
+  --edward-600: #616865;
+  --edward-700: #4f5553;
+  --edward-800: #444846;
+  --edward-900: #3b3f3e;
+  --edward-950: #272a29;
+}
+
+body {
+  margin-top: 6.25rem;
+}
