@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+  padding: 1.125rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.875rem;
+  color: var(--keppel-50);
+  background: linear-gradient(
+    135deg,
+    var(--keppel-400) 0%,
+    var(--keppel-600) 100%
+  );
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(
+      135deg,
+      var(--keppel-500) 0%,
+      var(--keppel-700) 100%
+    );
+  }
+
+  &:active {
+    background: linear-gradient(
+      135deg,
+      var(--keppel-600) 0%,
+      var(--keppel-800) 100%
+    );
+  }
+
+  &:disabled {
+    color: var(--keppel-700);
+    background: linear-gradient(
+      135deg,
+      var(--keppel-100) 0%,
+      var(--keppel-300) 100%
+    );
+  }
+}

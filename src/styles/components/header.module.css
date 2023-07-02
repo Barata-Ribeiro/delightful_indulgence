@@ -1,8 +1,8 @@
 .header {
-  width: 100%;
+  max-width: 100%;
   background-color: var(--keppel-50);
   height: 6.25rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 999;
@@ -18,7 +18,6 @@
 
 .logo {
   width: 8.5rem;
-  height: 4rem;
   flex-shrink: 0;
 }
 
@@ -41,7 +40,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 2px;
+    height: 0.125rem;
     width: 0;
     border-radius: 1rem;
     background-color: var(--meteor-600);

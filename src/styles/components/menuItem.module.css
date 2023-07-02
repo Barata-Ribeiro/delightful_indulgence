@@ -1,0 +1,39 @@
+.dessertPhoto {
+  display: grid;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-8px);
+  position: relative;
+
+  & > * {
+    grid-area: 1 / 1;
+  }
+
+  & .dessertContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 2rem 2rem;
+    z-index: 1;
+
+    & .dessertName {
+      color: var(--edward-50);
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 120%;
+      text-transform: capitalize;
+
+      & .special {
+        font-family: var(--type-second);
+      }
+    }
+    & .dessertDescription {
+      color: var(--edward-50);
+      align-self: flex-end;
+      text-align: right;
+      font-size: 1.5rem;
+      line-height: 110%;
+    }
+  }
+}

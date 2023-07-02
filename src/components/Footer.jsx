@@ -7,7 +7,7 @@ import { ReactComponent as Instagram } from '../assets/images/icons/instagram.sv
 import { ReactComponent as Twitter } from '../assets/images/icons/twitter.svg';
 import { ReactComponent as Mail } from '../assets/images/icons/mail.svg';
 import { ReactComponent as Phone } from '../assets/images/icons/phone_android.svg';
-import styles from '../styles/footer.module.css';
+import styles from '../styles/components/footer.module.css';
 
 const socialMediaLinks = [
   {

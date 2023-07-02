@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../styles/Story.module.css';
-import { ReactComponent as Underline } from '../assets/images/photos/story/underline.svg';
 import story1 from '../assets/images/photos/story/story1.jpg';
 import story2 from '../assets/images/photos/story/story2.jpg';
 import Image from '../components/utils/Image';
@@ -8,9 +7,7 @@ import Image from '../components/utils/Image';
 const Story = () => {
   return (
     <section className={`${styles.story} container`}>
-      <h1 className={styles.title}>
-        Our Story <Underline />
-      </h1>
+      <h1 className='title'>Our Story</h1>
       <div className={styles.grid1}>
         <Image src={story1} alt='Woman decorating sweet rose with honey' />
         <p className={styles.paragraph1}>
