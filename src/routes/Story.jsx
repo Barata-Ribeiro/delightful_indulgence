@@ -3,10 +3,15 @@ import styles from '../styles/Story.module.css';
 import story1 from '../assets/images/photos/story/story1.jpg';
 import story2 from '../assets/images/photos/story/story2.jpg';
 import Image from '../components/utils/Image';
+import Head from '../components/utils/Head';
 
 const Story = () => {
   return (
     <section className={`${styles.story} container`}>
+      <Head
+        title='Story'
+        description='Learn about how Delightful Indulgence came to be. It is a sweet story, rooted in a shared passion for culinary artistry and a common vision to delight people with our delectable creations.'
+      />
       <h1 className='title'>Our Story</h1>
       <div className={styles.grid1}>
         <Image src={story1} alt='Woman decorating sweet rose with honey' />

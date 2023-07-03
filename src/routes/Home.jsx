@@ -7,11 +7,12 @@ import Image from '../components/utils/Image';
 import MissionImage from '../assets/images/photos/home/mission&values.jpg';
 import { ReactComponent as TargetIcon } from '../assets/images/icons/target.svg';
 import { ReactComponent as DiamondIcon } from '../assets/images/icons/diamond.svg';
+import Head from '../components/utils/Head';
 
 const Home = () => {
   const [activeText, setActiveText] = React.useState(false);
 
-  const handleClick = (event) => {
+  const handleClick = () => {
     setActiveText((current) => !current);
   };
 
@@ -112,7 +113,11 @@ const Home = () => {
   ];
 
   return (
-    <main aria-label='Home Page' className={styles.home}>
+    <main id='home' aria-label='Home Page' className={styles.home}>
+      <Head
+        title='Home'
+        description='Welcome! Discover the joy of gourmet desserts with the Delightful Indulgence. The best ones that will certainly sweeten your heart.'
+      />
       <section aria-label='Hero' className={styles.hero}>
         <div className={styles.heroContent}>
           <p>
