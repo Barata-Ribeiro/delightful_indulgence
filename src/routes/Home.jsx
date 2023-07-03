@@ -1,13 +1,34 @@
 import React from 'react';
-import styles from '../styles/Home.module.css';
 import { Link } from 'react-router-dom';
+import Head from '../components/utils/Head';
+import styles from '../styles/Home.module.css';
 import GradientButton from '../components/utils/GradientButton';
 import MenuItem from '../components/MenuItem';
 import Image from '../components/utils/Image';
-import MissionImage from '../assets/images/photos/home/mission&values.jpg';
-import { ReactComponent as TargetIcon } from '../assets/images/icons/target.svg';
-import { ReactComponent as DiamondIcon } from '../assets/images/icons/diamond.svg';
-import Head from '../components/utils/Head';
+
+// MENU
+import Truffle from '/src/assets/images/photos/home/menu/menuTruffle.jpg';
+import Cake from '/src/assets/images/photos/home/menu/menuCake.jpg';
+import Cheesecake from '/src/assets/images/photos/home/menu/menuCheesecake.jpg';
+import Tart from '/src/assets/images/photos/home/menu/menuTart.jpg';
+import Tiramisu from '/src/assets/images/photos/home/menu/menuTiramisu.jpg';
+
+// TEAM
+import Ella from '/src/assets/images/photos/home/team/ella-simpson.jpg';
+import Samuel from '/src/assets/images/photos/home/team/samuel-davis.jpg';
+import Oliver from '/src/assets/images/photos/home/team/oliver-thompson.jpg';
+import Ava from '/src/assets/images/photos/home/team/ava-wilson.jpg';
+
+// TESTIMONIALS
+import Clients1 from '/src/assets/images/photos/home/clients/clients1.jpg';
+import Clients2 from '/src/assets/images/photos/home/clients/clients2.jpg';
+import Clients3 from '/src/assets/images/photos/home/clients/clients3.jpg';
+import Clients4 from '/src/assets/images/photos/home/clients/clients4.jpg';
+
+// MISSION AND VALUES IMAGE
+import MissionImage from '/src/assets/images/photos/home/mission&values.jpg';
+import { ReactComponent as TargetIcon } from '/src/assets/images/icons/target.svg';
+import { ReactComponent as DiamondIcon } from '/src/assets/images/icons/diamond.svg';
 
 const Home = () => {
   const [activeText, setActiveText] = React.useState(false);
@@ -21,32 +42,32 @@ const Home = () => {
       id: 'truffle',
       name: ['Gourmet', 'Chocolate Truffle'],
       description: 'Luxuriously rich and smooth chocolate truffle',
-      src: '/src/assets/images/photos/home/menu/menuTruffle.jpg',
+      src: Truffle,
     },
     {
       id: 'cheesecake',
       name: ['Ruby Berry', 'Cheesecake'],
       description: 'Creamy cheesecake infused with tart, fresh berries',
-      src: '/src/assets/images/photos/home/menu/menuCheesecake.jpg',
+      src: Cheesecake,
     },
     {
       id: 'cake',
       name: ['Emerald Enchantment', 'Layer Cake'],
       description:
         'Our Emerald Enchantment Layer Cake combines a vibrant, pistachio-infused sponge with a creamy filling and fresh strawberry topping - a truly enchanting indulgence.',
-      src: '/src/assets/images/photos/home/menu/menuCake.jpg',
+      src: Cake,
     },
     {
       id: 'tiramisu',
       name: ['Decadent', 'Tiramisu'],
       description: 'Heavenly, rich and fluffy tiramisu with a hint of espresso',
-      src: '/src/assets/images/photos/home/menu/menuTiramisu.jpg',
+      src: Tiramisu,
     },
     {
       id: 'tart',
       name: ['Tropical', 'Coconut Tart'],
       description: 'Creamy, rich tropical coconut tart for a touch of sunshine',
-      src: '/src/assets/images/photos/home/menu/menuTart.jpg',
+      src: Tart,
     },
   ];
 
@@ -57,7 +78,7 @@ const Home = () => {
       role: 'Co-founder and Head Chef',
       description:
         "Ella is a culinary genius whose passion lies in crafting irresistible dessert recipes. She ensures every treat shipped from our kitchen is a piece of pure delight. Ella loves hiking when she's not in the kitchen.",
-      src: '/src/assets/images/photos/home/team/ella-simpson.jpg',
+      src: Ella,
     },
     {
       id: 'samuel-davis',
@@ -65,7 +86,7 @@ const Home = () => {
       role: 'Co-founder and Operations Manager',
       description:
         'Samuel’s expertise lies in ensuring the smooth running of the business and that our delicious creations reach your doorstep in perfect condition. Samuel is a certified coffee aficionado and enjoys reading in his spare time.',
-      src: '/src/assets/images/photos/home/team/samuel-davis.jpg',
+      src: Samuel,
     },
     {
       id: 'oliver-thompson',
@@ -73,7 +94,7 @@ const Home = () => {
       role: 'Marketing',
       description:
         'Oliver is the creative brain behind our brand image. He’s always on the lookout for innovative ways to share the joy of our desserts with the world. Oliver enjoys photography and running during his time off.',
-      src: '/src/assets/images/photos/home/team/oliver-thompson.jpg',
+      src: Oliver,
     },
     {
       id: 'ava-wilson',
@@ -81,7 +102,7 @@ const Home = () => {
       role: 'Customer Success Manager',
       description:
         'Ava’s warm and inviting personality shines through as she provides top-notch support to our valued customers. She ensures your experience with Delightful Indulgence is nothing short of perfect. Ava is a dedicated yoga practitioner.',
-      src: '/src/assets/images/photos/home/team/ava-wilson.jpg',
+      src: Ava,
     },
   ];
 
@@ -90,25 +111,25 @@ const Home = () => {
       id: 'ethan-&-mia',
       testimonial: `We ordered the Emerald Layered Extravaganza for our anniversary, and it was nothing short of divine. The blend of flavors was just perfect - a testament to Delightful Indulgence's commitment to quality. Their desserts have become a staple in our special moments.`,
       coupleName: ['Ethan', 'Mia'],
-      src: '/src/assets/images/photos/home/clients/clients1.jpg',
+      src: Clients1,
     },
     {
       id: 'lucas-&-sophia',
       testimonial: `The Decadent Tiramisu is an absolute must-try! It brought a little piece of Italy to our doorstep. From the seamless ordering process to the delicious dessert, our experience with Delightful Indulgence was top-notch.`,
       coupleName: ['Lucas', 'Sophia'],
-      src: '/src/assets/images/photos/home/clients/clients2.jpg',
+      src: Clients2,
     },
     {
       id: 'jill-&-ava',
       testimonial: `We're in love with Delightful Indulgence's Ruby Berry Cheesecake. The perfect balance of creaminess and tangy berries had us savouring every bite. Their attention to detail truly shows in the taste and presentation of their desserts.`,
       coupleName: ['Jill', 'Ava'],
-      src: '/src/assets/images/photos/home/clients/clients3.jpg',
+      src: Clients3,
     },
     {
       id: 'liam-&-olivia',
       testimonial: `The Tropical Coconut Tart from Delightful Indulgence is a game changer. It's a delightful treat that brings a touch of the tropics to our home. We're definitely looking forward to trying more of their indulgent creations.`,
       coupleName: ['Liam', 'Olivia'],
-      src: '/src/assets/images/photos/home/clients/clients4.jpg',
+      src: Clients4,
     },
   ];
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Story.module.css';
-import story1 from '../assets/images/photos/story/story1.jpg';
-import story2 from '../assets/images/photos/story/story2.jpg';
+import story1 from '/src/assets/images/photos/story/story1.jpg';
+import story2 from '/src/assets/images/photos/story/story2.jpg';
 import Image from '../components/utils/Image';
 import Head from '../components/utils/Head';
 
