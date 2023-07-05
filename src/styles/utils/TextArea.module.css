@@ -1,0 +1,41 @@
+.wrapper {
+  & .textarea {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 0.125rem solid var(--edward-300);
+    border-radius: 0.75rem;
+    background: white;
+    box-shadow: 0px 0px 0px 0.125rem var(--edward-200);
+
+    font-size: 1rem;
+    line-height: 1;
+
+    transition: 0.2s;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: var(--keppel-300);
+      background: white;
+      box-shadow: 0px 0px 0px 0.125rem var(--keppel-200);
+    }
+  }
+  & .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #da0401;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+
+    &.errorIcon {
+      color: #da0401;
+    }
+  }
+}
+
+.textarea::placeholder {
+  color: var(--edward-200) !important;
+}

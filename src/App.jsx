@@ -7,6 +7,7 @@ import ErrorBoundary from './components/utils/ErrorBoundary';
 
 const Home = lazy(() => import('./routes/Home'));
 const Story = lazy(() => import('./routes/Story'));
+const Contact = lazy(() => import('./routes/Contact'));
 const SitePolicy = lazy(() => import('./routes/SitePolicy'));
 // const Dessert = lazy(() => import('./routes/Dessert'));
 const NotFound = lazy(() => import('./routes/NotFound'));
@@ -24,6 +25,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/story' element={<Story />} />
             <Route path='/menu/:dessertId' element={'TO BE ADD'} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
             <Route path='/privacypolicy' element={<SitePolicy />} />
           </Routes>
