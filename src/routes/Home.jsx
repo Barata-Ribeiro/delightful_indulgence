@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Link } from 'react-router-dom';
 import Head from '../components/utils/Head';
 import styles from '../styles/Home.module.css';
 import GradientButton from '../components/utils/GradientButton';
 import MenuItem from '../components/MenuItem';
 import Image from '../components/utils/Image';
+
+const MissionAndValues = lazy(() => import('../components/MissionAndValues'));
 
 // MENU
 import Truffle from '/src/assets/images/photos/home/menu/menuTruffle.jpg';
@@ -25,18 +27,7 @@ import Clients2 from '/src/assets/images/photos/home/clients/clients2.jpg';
 import Clients3 from '/src/assets/images/photos/home/clients/clients3.jpg';
 import Clients4 from '/src/assets/images/photos/home/clients/clients4.jpg';
 
-// MISSION AND VALUES IMAGE
-import MissionImage from '/src/assets/images/photos/home/mission&values.jpg';
-import { ReactComponent as TargetIcon } from '/src/assets/images/icons/target.svg';
-import { ReactComponent as DiamondIcon } from '/src/assets/images/icons/diamond.svg';
-
 const Home = () => {
-  const [activeText, setActiveText] = React.useState(false);
-
-  const handleClick = () => {
-    setActiveText((current) => !current);
-  };
-
   const dessertMenu = [
     {
       id: 'truffle',
@@ -232,63 +223,7 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <section
-        aria-label="Company's Mission and Values"
-        id='mission-and-values'
-        className={`${styles.missionValues} container`}
-      >
-        <div className={styles.missionValuesWrapper}>
-          <div className={styles.selectors}>
-            <p
-              onClick={handleClick}
-              className={activeText ? '' : `${styles.activeText}`}
-            >
-              <TargetIcon /> Our Mission
-            </p>
-            <p
-              onClick={handleClick}
-              className={activeText ? `${styles.activeText}` : ''}
-            >
-              <DiamondIcon /> Our Values
-            </p>
-          </div>
-          <div className={styles.missionValuesText}>
-            <p className={activeText ? '' : `${styles.activeText}`}>
-              Our mission at <span>Delightful</span> Indulgence is to create
-              memorable moments through our range of delectable desserts. We
-              strive to offer the highest quality, using only the finest
-              ingredients to craft our unique, secret recipes.
-            </p>
-            <ol className={activeText ? `${styles.activeText}` : ''}>
-              <li>
-                <strong>Quality:</strong> We believe in using only the best
-                ingredients to create our desserts. Quality is not just a
-                standard - it&apos;s our promise.
-              </li>
-              <li>
-                <strong>Innovation:</strong> We continually seek to bring new,
-                exciting flavors to our customers, blending traditional
-                techniques with modern culinary trends.
-              </li>
-              <li>
-                <strong>Customer Delight:</strong> Our aim is not just to
-                satisfy but to delight our customers with our desserts and our
-                service.
-              </li>
-              <li>
-                <strong>Integrity:</strong> We are committed to running our
-                business based on honesty, transparency, and respect for our
-                customers and team members.
-              </li>
-            </ol>
-          </div>
-        </div>
-        <Image
-          src={MissionImage}
-          alt='Several chocolate truffles being covered in chocolate powder.'
-          className={styles.missionValuesImage}
-        />
-      </section>
+      <MissionAndValues />
     </main>
   );
 };

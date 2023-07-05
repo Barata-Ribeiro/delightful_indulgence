@@ -1,0 +1,71 @@
+.missionValues {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.25rem;
+
+  & .missionValuesWrapper {
+    display: block;
+
+    & .selectors {
+      display: flex;
+      gap: 2rem;
+      cursor: pointer;
+
+      & p {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        color: var(--edward-300);
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1;
+
+        & svg {
+          color: var(--edward-300);
+          fill: var(--edward-300);
+        }
+      }
+    }
+
+    & .missionValuesText {
+      margin-top: 1rem;
+      max-width: 37rem;
+      line-height: 1.4;
+      color: var(--edward-300);
+
+      & p {
+        margin-bottom: 1.75rem;
+
+        & span {
+          font-family: var(--type-second);
+        }
+      }
+
+      & ol {
+        list-style: decimal;
+        list-style-position: inside;
+
+        & strong {
+          font-weight: 700;
+        }
+
+        & li + li {
+          margin-top: 0.75rem;
+        }
+      }
+    }
+
+    & .activeText {
+      color: var(--edward-950) !important;
+
+      & svg {
+        color: var(--edward-950) !important;
+        fill: var(--edward-950) !important;
+      }
+    }
+  }
+
+  & .missionValuesImage {
+    max-width: 32.5rem;
+  }
+}
