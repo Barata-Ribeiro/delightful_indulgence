@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import styles from '../styles/components/header.module.css';
 import { ReactComponent as Logo } from '../assets/logo.svg';
@@ -14,6 +14,16 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const location = useLocation();
+  React.useEffect(() => {
+    if (!location.hash) {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, [location]);
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
