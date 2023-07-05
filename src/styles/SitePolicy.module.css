@@ -1,0 +1,40 @@
+.wrapper {
+  display: block;
+  padding-inline: 4.5rem;
+  margin: 4.5rem auto;
+
+  & .title {
+    margin-bottom: 3rem;
+    color: var(--meteor-600);
+    font-size: var(--title-2);
+    font-family: Pacifico;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    text-decoration: underline 0.375rem;
+    text-underline-position: under;
+  }
+
+  & div {
+    margin-top: 3rem;
+  }
+
+  & .paragraph {
+    color: var(--edward-950);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 50rem;
+  }
+
+  & .title2 {
+    margin-bottom: 2rem;
+    color: var(--meteor-600);
+    font-size: 3rem;
+    font-family: Pacifico;
+    line-height: 1;
+    position: relative;
+    text-align: left;
+    text-decoration: underline 0.375rem;
+    text-underline-position: under;
+  }
+}

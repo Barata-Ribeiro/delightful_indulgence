@@ -6,9 +6,10 @@ import Loading from './components/utils/Loading';
 import ErrorBoundary from './components/utils/ErrorBoundary';
 
 const Home = lazy(() => import('./routes/Home'));
-const NotFound = lazy(() => import('./routes/NotFound'));
 const Story = lazy(() => import('./routes/Story'));
+const SitePolicy = lazy(() => import('./routes/SitePolicy'));
 // const Dessert = lazy(() => import('./routes/Dessert'));
+const NotFound = lazy(() => import('./routes/NotFound'));
 
 const HeaderMemo = React.memo(Header);
 const FooterMemo = React.memo(Footer);
@@ -24,6 +25,7 @@ function App() {
             <Route path='/story' element={<Story />} />
             <Route path='/menu/:dessertId' element={'TO BE ADD'} />
             <Route path='*' element={<NotFound />} />
+            <Route path='/privacypolicy' element={<SitePolicy />} />
           </Routes>
         </Suspense>
         <FooterMemo />
