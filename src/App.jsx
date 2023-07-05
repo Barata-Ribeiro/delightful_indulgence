@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Loading from './components/utils/Loading';
+import ErrorBoundary from './components/utils/ErrorBoundary';
 
 const Home = lazy(() => import('./routes/Home'));
 const NotFound = lazy(() => import('./routes/NotFound'));
@@ -11,28 +12,6 @@ const Story = lazy(() => import('./routes/Story'));
 
 const HeaderMemo = React.memo(Header);
 const FooterMemo = React.memo(Footer);
-
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error, errorInfo) {
-    console.log('An error occurred: ', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return <h1>Something went wrong.</h1>;
-    }
-    return this.props.children;
-  }
-}
 
 function App() {
   return (
