@@ -25,6 +25,7 @@ const Input = ({
           onChange={onChange}
           onBlur={onBlur}
           placeholder={placeholder}
+          spellCheck='true'
           required
         ></textarea>
       </label>

@@ -1,0 +1,133 @@
+.section {
+  margin: 4.5rem auto;
+  & .grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    & img {
+      border-radius: 1rem;
+    }
+
+    & .dessert {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      & .name {
+        color: var(--edward-950);
+        font-size: var(--paragraph-2);
+        font-weight: 700;
+
+        & .firstName {
+          display: block;
+          color: var(--keppel-600);
+          font-family: Pacifico;
+        }
+      }
+
+      & .info {
+        & .desc {
+          line-height: 1.7;
+          max-width: 30.5rem;
+        }
+
+        & .sweetness {
+          margin: 2rem auto;
+
+          & p {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+
+            & span {
+              margin-left: 0.25rem;
+            }
+          }
+        }
+
+        & .ingredientsWrapper {
+          display: block;
+
+          & .ingredientsTitle {
+            font-weight: 700;
+          }
+
+          & .ingredients {
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+  }
+
+  & .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+    & .info2 {
+      & .size {
+        & p:first-child {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        & p:last-child {
+          line-height: 1.7;
+          margin-bottom: 1.5rem;
+        }
+      }
+      & .rec {
+        & p:first-child {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        & p:last-child {
+          line-height: 1.7;
+        }
+      }
+    }
+
+    & .price {
+      max-width: 20rem;
+      & .priceTags {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        & p:first-child {
+          color: var(--keppel-300);
+          font-size: var(--paragraph-1);
+          line-height: 1.7;
+
+          & span {
+            color: var(--edward-300);
+            font-size: 0.875rem;
+            vertical-align: sub;
+            line-height: 1.7;
+          }
+        }
+
+        & p:last-child {
+          color: var(--keppel-600);
+          font-size: var(--paragraph-1);
+          line-height: 1.7;
+
+          & span {
+            color: var(--edward-600);
+            font-size: 0.875rem;
+            vertical-align: sub;
+            line-height: 1.7;
+          }
+        }
+      }
+      & .priceDesc {
+        color: var(--edward-950);
+        font-weight: 600;
+        line-height: 1.7;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

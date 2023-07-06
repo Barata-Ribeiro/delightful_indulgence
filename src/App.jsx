@@ -9,7 +9,7 @@ const Home = lazy(() => import('./routes/Home'));
 const Story = lazy(() => import('./routes/Story'));
 const Contact = lazy(() => import('./routes/Contact'));
 const SitePolicy = lazy(() => import('./routes/SitePolicy'));
-// const Dessert = lazy(() => import('./routes/Dessert'));
+const Dessert = lazy(() => import('./routes/Dessert'));
 const NotFound = lazy(() => import('./routes/NotFound'));
 
 const HeaderMemo = React.memo(Header);
@@ -24,7 +24,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/story' element={<Story />} />
-            <Route path='/menu/:dessertId' element={'TO BE ADD'} />
+            <Route path='/menu/:dessertId' element={<Dessert />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
             <Route path='/privacypolicy' element={<SitePolicy />} />

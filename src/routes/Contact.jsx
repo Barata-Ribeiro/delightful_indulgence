@@ -49,7 +49,13 @@ const Contact = () => {
             {...subject}
           />
           <Input type='text' name='phone' placeholder='Phone' {...phone} />
-          <TextArea name={message} placeholder='Message' {...message} />
+          <TextArea
+            name={message}
+            placeholder='Message'
+            rows={5}
+            cols={10}
+            {...message}
+          />
           <button className={styles.button}>Send</button>
         </form>
         <div className={styles.separator}></div>
