@@ -9,23 +9,23 @@ import Image from '../components/utils/Image';
 const MissionAndValues = lazy(() => import('../components/MissionAndValues'));
 
 // MENU
-import Truffle from '/src/assets/images/photos/home/menu/menuTruffle.jpg';
-import Cake from '/src/assets/images/photos/home/menu/menuCake.jpg';
-import Cheesecake from '/src/assets/images/photos/home/menu/menuCheesecake.jpg';
-import Tart from '/src/assets/images/photos/home/menu/menuTart.jpg';
-import Tiramisu from '/src/assets/images/photos/home/menu/menuTiramisu.jpg';
+import Truffle from '/assets/images/photos/home/menu/menuTruffle.jpg';
+import Cake from '/assets/images/photos/home/menu/menuCake.jpg';
+import Cheesecake from '/assets/images/photos/home/menu/menuCheesecake.jpg';
+import Tart from '/assets/images/photos/home/menu/menuTart.jpg';
+import Tiramisu from '/assets/images/photos/home/menu/menuTiramisu.jpg';
 
 // TEAM
-import Ella from '/src/assets/images/photos/home/team/ella-simpson.jpg';
-import Samuel from '/src/assets/images/photos/home/team/samuel-davis.jpg';
-import Oliver from '/src/assets/images/photos/home/team/oliver-thompson.jpg';
-import Ava from '/src/assets/images/photos/home/team/ava-wilson.jpg';
+import Ella from '/assets/images/photos/home/team/ella-simpson.jpg';
+import Samuel from '/assets/images/photos/home/team/samuel-davis.jpg';
+import Oliver from '/assets/images/photos/home/team/oliver-thompson.jpg';
+import Ava from '/assets/images/photos/home/team/ava-wilson.jpg';
 
 // TESTIMONIALS
-import Clients1 from '/src/assets/images/photos/home/clients/clients1.jpg';
-import Clients2 from '/src/assets/images/photos/home/clients/clients2.jpg';
-import Clients3 from '/src/assets/images/photos/home/clients/clients3.jpg';
-import Clients4 from '/src/assets/images/photos/home/clients/clients4.jpg';
+import Clients1 from '/assets/images/photos/home/clients/clients1.jpg';
+import Clients2 from '/assets/images/photos/home/clients/clients2.jpg';
+import Clients3 from '/assets/images/photos/home/clients/clients3.jpg';
+import Clients4 from '/assets/images/photos/home/clients/clients4.jpg';
 
 const Home = () => {
   const dessertMenu = [

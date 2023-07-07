@@ -3,9 +3,9 @@ import Image from './utils/Image';
 import styles from '../styles/components/missionandvalues.module.css';
 
 // MISSION AND VALUES IMAGE
-import MissionImage from '/src/assets/images/photos/home/mission&values.jpg';
-import { ReactComponent as TargetIcon } from '/src/assets/images/icons/target.svg';
-import { ReactComponent as DiamondIcon } from '/src/assets/images/icons/diamond.svg';
+import MissionImage from '/assets/images/photos/home/mission&values.jpg';
+import { ReactComponent as TargetIcon } from '/src/assets/icons/target.svg';
+import { ReactComponent as DiamondIcon } from '/src/assets/icons/diamond.svg';
 
 const MissionAndValues = () => {
   const [activeText, setActiveText] = React.useState(false);

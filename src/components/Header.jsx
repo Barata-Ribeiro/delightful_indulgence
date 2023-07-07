@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import styles from '../styles/components/header.module.css';
-import { ReactComponent as Logo } from '../assets/logo.svg';
+import { ReactComponent as Logo } from '/src/assets/logo.svg';
 import MainButton from './utils/MainButton';
 
 const navLinks = [

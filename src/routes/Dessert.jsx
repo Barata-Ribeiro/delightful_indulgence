@@ -6,11 +6,11 @@ import { IoHeart } from 'react-icons/io5';
 import Loading from '../components/utils/Loading';
 
 // Images
-import Cake from '/src/assets/images/photos/desserts/cake.jpg';
-import Truffle from '/src/assets/images/photos/desserts/truffle.jpg';
-import Cheesecake from '/src/assets/images/photos/desserts/cheesecake.jpg';
-import Tart from '/src/assets/images/photos/desserts/tart.jpg';
-import Tiramisu from '/src/assets/images/photos/desserts/tiramisu.jpg';
+import Cake from '/assets/images/photos/desserts/cake.jpg';
+import Truffle from '/assets/images/photos/desserts/truffle.jpg';
+import Cheesecake from '/assets/images/photos/desserts/cheesecake.jpg';
+import Tart from '/assets/images/photos/desserts/tart.jpg';
+import Tiramisu from '/assets/images/photos/desserts/tiramisu.jpg';
 
 const Dessert = () => {
   const location = useLocation();

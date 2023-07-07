@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { ReactComponent as Logo } from '../assets/footerLogo.svg';
-import { ReactComponent as Facebook } from '../assets/images/icons/facebook.svg';
-import { ReactComponent as Instagram } from '../assets/images/icons/instagram.svg';
-import { ReactComponent as Twitter } from '../assets/images/icons/twitter.svg';
-import { ReactComponent as Mail } from '../assets/images/icons/mail.svg';
-import { ReactComponent as Phone } from '../assets/images/icons/phone_android.svg';
+import { ReactComponent as Logo } from '/src/assets/footerLogo.svg';
+import { ReactComponent as Facebook } from '/src/assets/icons/facebook.svg';
+import { ReactComponent as Instagram } from '/src/assets/icons/instagram.svg';
+import { ReactComponent as Twitter } from '/src/assets/icons/twitter.svg';
+import { ReactComponent as Mail } from '/src/assets/icons/mail.svg';
+import { ReactComponent as Phone } from '/src/assets/icons/phone_android.svg';
 import styles from '../styles/components/footer.module.css';
 
 const socialMediaLinks = [
