@@ -92,3 +92,42 @@
 .message::placeholder {
   color: var(--edward-200) !important;
 }
+
+@media (max-width: 768px) {
+  .section {
+    margin: 2.25rem auto;
+    padding-inline: 1rem;
+
+    & .grid {
+      grid-template-columns: 1fr;
+      margin-top: 2.25rem;
+      justify-items: center;
+
+      & .form {
+        max-width: 100%;
+      }
+
+      & .separator {
+        display: none;
+      }
+
+      & .info {
+        margin-top: 2.25rem;
+        padding-top: 2.25rem;
+        place-content: center;
+        place-items: center;
+        border-top: 0.25rem solid var(--edward-100);
+
+        & .address,
+        & .phone,
+        & .workTime {
+          text-align: center;
+        }
+
+        & .listSeparator {
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
+}

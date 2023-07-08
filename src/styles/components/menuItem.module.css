@@ -20,7 +20,7 @@
     & .dessertName {
       color: var(--edward-50);
       text-align: center;
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 3.5rem + -2.5vw, 2.5rem);
       line-height: 1.2;
       text-transform: capitalize;
 
@@ -32,7 +32,7 @@
       color: var(--edward-50);
       align-self: flex-end;
       text-align: right;
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 3.5rem + -2.5vw, 2.5rem);
       line-height: 1.1;
     }
   }
@@ -46,10 +46,10 @@
 
     & .dessertContent {
       justify-content: space-between;
+
       & .dessertDescription {
-        font-size: 1.25rem;
         line-height: auto;
-        text-align: center;
+        text-align: left;
         align-self: center;
       }
     }

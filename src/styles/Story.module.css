@@ -17,7 +17,7 @@
     }
 
     & .paragraph1 {
-      line-height: 170%;
+      line-height: 1.7;
       max-width: 37rem;
 
       & span {
@@ -33,21 +33,21 @@
     gap: 2rem;
     align-items: start;
 
-    .paragraphs2 {
+    & .paragraphs2 {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 4.875rem;
 
       & .paragraph2 {
-        line-height: 170%;
+        line-height: 1.7;
         max-width: 37rem;
       }
 
       & .paragraphCall {
         text-align: center;
         font-size: var(--paragraph-2);
-        line-height: 150%;
+        line-height: 1.5;
         max-width: 22rem;
 
         & span {
@@ -60,6 +60,34 @@
     & img {
       max-height: 46.3125rem;
       object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .story {
+    padding: 2.25rem 1rem;
+
+    & .grid1 {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    & .grid2 {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+
+      & .paragraphs2 {
+        order: 2;
+        gap: 2.5rem;
+
+        & .paragraphCall {
+          margin-bottom: 3rem;
+        }
+      }
+
+      & img {
+        order: 1;
+      }
     }
   }
 }

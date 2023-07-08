@@ -24,6 +24,10 @@ const Header = () => {
       });
     }
   }, [location]);
+
+  const [isOpen, setIsOpen] = React.useState(false);
+  const handleToggle = () => setIsOpen(!isOpen);
+
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
@@ -34,20 +38,60 @@ const Header = () => {
         >
           <Logo />
         </Link>
-        <ul className={styles.navLinks}>
+        <button
+          onClick={handleToggle}
+          className={styles.hamburger}
+          aria-expanded={isOpen}
+        >
+          <svg
+            fill='var(--keppel-950)'
+            stroke='var(--keppel-950)'
+            className={`${styles.hamburgerSVG} ${
+              isOpen ? styles.open : styles.closed
+            }`}
+            viewBox='0 0 100 100'
+            width='50'
+          >
+            <line
+              className={`${styles.line} ${styles.top}`}
+              x1='90'
+              x2='10'
+              y1='40'
+              y2='40'
+              strokeWidth='10'
+              strokeLinecap='round'
+              strokeDasharray='80'
+              strokeDashoffset='0'
+            ></line>
+            <line
+              className={`${styles.line} ${styles.bottom}`}
+              x1='10'
+              x2='90'
+              y1='60'
+              y2='60'
+              strokeWidth='10'
+              strokeLinecap='round'
+              strokeDasharray='80'
+              strokeDashoffset='0'
+            ></line>
+          </svg>
+        </button>
+        <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
           {navLinks.map((link) => (
             <li key={link.id}>
               {link.isHashLink ? (
-                <HashLink smooth to={link.url}>
+                <HashLink smooth to={link.url} onClick={handleToggle}>
                   {link.name}
                 </HashLink>
               ) : (
-                <Link to={link.url}>{link.name}</Link>
+                <Link to={link.url} onClick={handleToggle}>
+                  {link.name}
+                </Link>
               )}
             </li>
           ))}
         </ul>
-        <Link to='/order'>
+        <Link to='/order' className={styles.orderBtn}>
           <MainButton text='Order Ahead' />
         </Link>
       </nav>

@@ -107,7 +107,9 @@ const Footer = () => {
           </div>
           <div className={styles.copy}>
             <p>{`Powered by Barata </> Ribeiro`}</p>
-            <p>{currentYear} © Delightful Indulgence - Some rights reserved.</p>
+            <p>
+              {currentYear} © Delightful Indulgence - Some rights reserved.
+            </p>
           </div>
         </div>
         <div className={styles.thirdColumn}>
