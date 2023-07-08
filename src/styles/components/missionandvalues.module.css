@@ -69,3 +69,20 @@
     max-width: 32.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  .missionValues {
+    flex-direction: column;
+    padding-inline: 1rem;
+
+    & .missionValuesWrapper {
+      order: 2;
+    }
+
+    & .missionValuesImage {
+      order: 1;
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}

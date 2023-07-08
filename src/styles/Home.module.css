@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   place-items: center;
-  margin-top: 4.5rem;
+  margin: 4.5rem auto;
 
   & .description {
     color: var(--edward-950);
@@ -51,7 +51,6 @@
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
     margin-top: 3.37rem;
-    margin-bottom: 4.5rem;
     & .menuListItem {
       display: flex;
       flex-direction: column;
@@ -246,4 +245,73 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding-inline: 0.5rem;
+    & button {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
 
+  .menu {
+    margin: 2.25rem auto;
+    padding: 0 1rem;
+
+    & .description {
+      padding-inline: 0.5rem;
+    }
+
+    & .menuList {
+      grid-template-columns: initial;
+      grid-template-rows: initial;
+      margin-top: 1.685rem;
+      gap: 1rem;
+
+      & .menuListItem {
+        justify-content: center;
+      }
+    }
+    & li:nth-of-type(1),
+    & li:nth-of-type(2),
+    & li:nth-of-type(3),
+    & li:nth-of-type(4),
+    & li:nth-of-type(5) {
+      max-width: 100%;
+      max-height: max-content;
+      grid-area: auto;
+    }
+  }
+
+  .team {
+    margin: 2.5rem auto;
+
+    & .teamContainer {
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+      margin-top: 2rem;
+
+      & .teamMember {
+        display: block;
+        margin-bottom: 1rem;
+
+        & .teamContent {
+          gap: 1rem;
+        }
+
+        & .teamMemberImage {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    margin: 2.25rem auto;
+
+    & .testimonialsContainer {
+      grid-template-columns: 1fr;
+      padding-inline: 1rem;
+    }
+  }
+}

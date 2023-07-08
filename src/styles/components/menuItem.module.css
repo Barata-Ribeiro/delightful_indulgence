@@ -21,7 +21,7 @@
       color: var(--edward-50);
       text-align: center;
       font-size: 1.5rem;
-      line-height: 120%;
+      line-height: 1.2;
       text-transform: capitalize;
 
       & .special {
@@ -33,7 +33,25 @@
       align-self: flex-end;
       text-align: right;
       font-size: 1.5rem;
-      line-height: 110%;
+      line-height: 1.1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dessertPhoto {
+    & .dessertContent {
+      padding: 1rem;
+    }
+
+    & .dessertContent {
+      justify-content: space-between;
+      & .dessertDescription {
+        font-size: 1.25rem;
+        line-height: auto;
+        text-align: center;
+        align-self: center;
+      }
     }
   }
 }
