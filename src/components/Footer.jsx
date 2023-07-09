@@ -49,7 +49,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} container`}>
         <div className={styles.firstColumn}>
           <Link
             to='/'

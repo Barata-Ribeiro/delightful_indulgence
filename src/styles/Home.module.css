@@ -63,7 +63,7 @@
   & li:nth-of-type(4),
   & li:nth-of-type(5) {
     max-width: 17.5rem;
-    max-height: 17.5rem;
+    aspect-ratio: 1 / 1;
   }
 
   & li:nth-of-type(1) {

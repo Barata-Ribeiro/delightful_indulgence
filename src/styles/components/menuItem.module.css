@@ -32,7 +32,7 @@
       color: var(--edward-50);
       align-self: flex-end;
       text-align: right;
-      font-size: clamp(1.5rem, 3.5rem + -2.5vw, 2.5rem);
+      font-size: 1.5rem;
       line-height: 1.1;
     }
   }
@@ -51,6 +51,17 @@
         line-height: auto;
         text-align: left;
         align-self: center;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .dessertPhoto {
+    & .dessertContent {
+      & .dessertDescription {
+        font-size: clamp(1.25rem, 0.875rem + 0.875vw, 2.5rem);
       }
     }
   }

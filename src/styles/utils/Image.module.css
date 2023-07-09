@@ -1,27 +1,28 @@
 .wrapper {
   display: grid;
-}
 
-.img {
-  display: block;
-  max-width: 100%;
-  grid-area: 1 / 1;
-  opacity: 0;
-  transition: 0.2s;
-}
+  & .skeleton {
+    grid-area: 1/1;
+    max-width: 100%;
+    background-image: linear-gradient(
+      90deg,
+      var(--edward-300) 0px,
+      var(--edward-50) 50%,
+      var(--edward-300) 100%
+    );
+    background-color: var(--edward-300);
+    background-size: 200%;
+    animation: skeleton 1.5s infinite linear;
 
-.skeleton {
-  grid-area: 1/1;
-  height: 100%;
-  background-image: linear-gradient(
-    90deg,
-    var(--edward-300) 0px,
-    var(--edward-50) 50%,
-    var(--edward-300) 100%
-  );
-  background-color: var(--edward-300);
-  background-size: 200%;
-  animation: skeleton 1.5s infinite linear;
+    & .img {
+      display: block;
+      object-fit: cover;
+      max-width: 100%;
+      grid-area: 1 / 1;
+      opacity: 0;
+      transition: 0.2s;
+    }
+  }
 }
 
 @keyframes skeleton {
