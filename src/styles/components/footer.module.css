@@ -148,7 +148,6 @@
 @media (max-width: 768px) {
   .footer {
     height: 100%;
-    padding-inline: 0.5rem;
 
     & .wrapper {
       flex-direction: column;

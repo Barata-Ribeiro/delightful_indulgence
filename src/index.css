@@ -2,41 +2,41 @@
 
 :root {
   /* COLORS */
-  --keppel-50: #eefbf5;
-  --keppel-100: #d6f5e5;
-  --keppel-200: #b0eacf;
-  --keppel-300: #7dd8b4;
-  --keppel-400: #3eb489;
-  --keppel-500: #24a57a;
-  --keppel-600: #178462;
-  --keppel-700: #126a51;
-  --keppel-800: #115441;
-  --keppel-900: #0f4537;
-  --keppel-950: #07271f;
+  --keppel-50: hsl(152, 61.9%, 95.9%);
+  --keppel-100: hsl(149, 60.8%, 90%);
+  --keppel-200: hsl(152, 58%, 80.4%);
+  --keppel-300: hsl(156, 53.8%, 66.9%);
+  --keppel-400: hsl(158, 48.8%, 47.5%);
+  --keppel-500: hsl(160, 64.2%, 39.4%);
+  --keppel-600: hsl(161, 70.3%, 30.4%);
+  --keppel-700: hsl(163, 71%, 24.3%);
+  --keppel-800: hsl(163, 66.3%, 19.8%);
+  --keppel-900: hsl(164, 64.3%, 16.5%);
+  --keppel-950: hsl(165, 69.6%, 9%);
 
-  --meteor-50: #fdfbe9;
-  --meteor-100: #fbf7c6;
-  --meteor-200: #f8ec90;
-  --meteor-300: #f4db50;
-  --meteor-400: #efc620;
-  --meteor-500: #dfae13;
-  --meteor-600: #c78c0e;
-  --meteor-700: #9a620e;
-  --meteor-800: #7f4d14;
-  --meteor-900: #6c3f17;
-  --meteor-950: #3f2009;
+  --meteor-50: hsl(54, 83.3%, 95.3%);
+  --meteor-100: hsl(55, 86.9%, 88%);
+  --meteor-200: hsl(53, 88.1%, 76.9%);
+  --meteor-300: hsl(51, 88.2%, 63.5%);
+  --meteor-400: hsl(48, 86.6%, 53.1%);
+  --meteor-500: hsl(46, 84.3%, 47.5%);
+  --meteor-600: hsl(41, 86.9%, 41.8%);
+  --meteor-700: hsl(36, 83.3%, 32.9%);
+  --meteor-800: hsl(32, 72.8%, 28.8%);
+  --meteor-900: hsl(28, 64.9%, 25.7%);
+  --meteor-950: hsl(26, 75%, 14.1%);
 
-  --edward-50: #f7f8f7;
-  --edward-100: #eef0f0;
-  --edward-200: #dadddc;
-  --edward-300: #b0b5b3;
-  --edward-400: #959b99;
-  --edward-500: #787f7c;
-  --edward-600: #616865;
-  --edward-700: #4f5553;
-  --edward-800: #444846;
-  --edward-900: #3b3f3e;
-  --edward-950: #272a29;
+  --edward-50: hsl(120, 6.7%, 97.1%);
+  --edward-100: hsl(180, 6.2%, 93.7%);
+  --edward-200: hsl(160, 4.2%, 86.1%);
+  --edward-300: hsl(156, 3.3%, 70%);
+  --edward-400: hsl(160, 2.9%, 59.6%);
+  --edward-500: hsl(154, 2.8%, 48.4%);
+  --edward-600: hsl(154, 3.5%, 39.4%);
+  --edward-700: hsl(160, 3.7%, 32.2%);
+  --edward-800: hsl(150, 2.9%, 27.5%);
+  --edward-900: hsl(165, 3.3%, 23.9%);
+  --edward-950: hsl(160, 3.7%, 15.9%);
 
   /* FONT FAMILY */
   --type-first: 'Roboto', sans-serif;
@@ -68,7 +68,7 @@ body {
 }
 
 .container {
-  max-width: 76rem;
+  max-width: min(76rem, 100% - 1.5rem);
   margin-inline: auto;
 }
 

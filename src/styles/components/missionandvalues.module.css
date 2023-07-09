@@ -73,7 +73,6 @@
 @media (max-width: 768px) {
   .missionValues {
     flex-direction: column;
-    padding-inline: 1rem;
 
     & .missionValuesWrapper {
       order: 2;

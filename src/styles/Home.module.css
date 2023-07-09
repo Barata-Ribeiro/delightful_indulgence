@@ -247,7 +247,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-inline: 0.5rem;
+    padding-inline: 1rem;
     & button {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -256,7 +256,6 @@
 
   .menu {
     margin: 2.25rem auto;
-    padding: 0 1rem;
 
     & .description {
       padding-inline: 0.5rem;
@@ -311,7 +310,6 @@
 
     & .testimonialsContainer {
       grid-template-columns: 1fr;
-      padding-inline: 1rem;
     }
   }
 }
