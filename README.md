@@ -6,7 +6,7 @@ Delightful Indulgence is a gourmet dessert company that prides itself on craftin
 
 ## 👨‍💻 Demo
 
-![Delightful Indulgence](./public/screenshot.gif)
+![Delightful Indulgence](./public/assets/screenshot.gif)
 
 ## 🚀 Built With
 
