@@ -11,6 +11,7 @@ import Truffle from '/assets/images/photos/desserts/truffle.jpg';
 import Cheesecake from '/assets/images/photos/desserts/cheesecake.jpg';
 import Tart from '/assets/images/photos/desserts/tart.jpg';
 import Tiramisu from '/assets/images/photos/desserts/tiramisu.jpg';
+import Head from '../components/utils/Head';
 
 const Dessert = () => {
   const location = useLocation();
@@ -103,6 +104,10 @@ const Dessert = () => {
     <section className={`container ${styles.section}`}>
       {dessert.id ? (
         <div>
+          <Head
+            title={`${dessert.name[0]} ${dessert.name[1]}`}
+            description={dessert.desc}
+          />
           <div className={styles.grid1}>
             <Image src={dessert.src} alt={`photo}`} />
             <div className={styles.dessert}>

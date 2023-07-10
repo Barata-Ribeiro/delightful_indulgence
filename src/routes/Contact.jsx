@@ -8,6 +8,7 @@ import {
   IoTimeOutline,
   IoPhonePortraitOutline,
 } from 'react-icons/io5';
+import Head from '../components/utils/Head';
 
 const Contact = () => {
   const name = useForm();
@@ -26,6 +27,10 @@ const Contact = () => {
 
   return (
     <section className={`container ${styles.section}`}>
+      <Head
+        title='Contact Us'
+        description='This is the best way to contact us. Be it to order, complain, get in touch, or just want to say hi. Do not hesitate to reach out to us.'
+      />
       <h1 className='title'>Contact</h1>
       <div className={styles.grid}>
         <form onSubmit={handleSubmit} className={styles.form}>
