@@ -131,3 +131,31 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    & .grid1 {
+      grid-template-columns: 1fr;
+    }
+    & .grid2 {
+      grid-template-columns: 1fr;
+
+      & .info2 {
+        order: 2;
+      }
+
+      & .price {
+        order: 1;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 6.25rem;
+          height: 0.125rem;
+          margin-top: 2rem;
+          background: var(--meteor-600);
+        }
+      }
+    }
+  }
+}
